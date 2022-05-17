@@ -1,0 +1,42 @@
+<mvc:View 
+    controllerName="at.clouddna.training01.zhoui501.controller.Customer"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    >
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <customHeader>
+                        <OverflowToolbar id="_IDGenOverflowToolbar1">  
+                            <Title id="_IDGenTitle1" text="{i18n>title}"/>
+                            <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                            <Button id="customer_edit_button" text="{i18n>edit}" type="Emphasized"
+                                icon="sap-icon://edit" press="onEditPressed"
+                                visible="{= !${editModel>/editmode}}"/>
+                        </OverflowToolbar>
+                    </customHeader>
+                    <content>
+
+                    </content>
+                    <footer>
+                        <Bar id="_IDGenBar1">
+                            <contentRight>
+                                <Button id="customer_save_button" text="{i18n>save}" type="Accept"
+                                    icon="sap-icon://save" press="onSavePressed"
+                                    visible="{editModel>/editmode}"/>
+
+                                <Button id="customer_cancel_button" text="{i18n>cancel}" type="Reject"
+                                    icon="sap-icon://cancel" press="onCancelPressed"
+                                    visible="{editModel>/editmode}"/>
+                            </contentRight>
+                        </Bar>
+                    </footer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

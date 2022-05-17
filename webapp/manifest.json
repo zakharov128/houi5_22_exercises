@@ -101,6 +101,13 @@
           "target": [
             "TargetApp"
           ]
+        },
+        {
+            "name": "Customer",
+            "pattern": "",
+            "target":[
+                "Customer"
+            ]
         }
       ],
       "targets": {
@@ -110,6 +117,13 @@
           "clearControlAggregation": false,
           "viewId": "App",
           "viewName": "App"
+        },
+        "Customer": {
+            "viewType": "XML",
+            "transition":"slide",
+            "clearControlAggregation": false,
+            "viewId": "Customer",
+            "viewName": "Customer"
         }
       }
     },

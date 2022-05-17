@@ -9,35 +9,7 @@
     <Shell id="shell">
         <App id="app">
             <pages>
-                <Page id="page" title="{i18n>title}">
-                    <customHeader>
-                        <OverflowToolbar>  
-                            <Title text="{i18n>title}"/>
-                            <ToolbarSpacer/>
-                            <Button id="app_edit_button" text="{i18n>edit}" type="Emphasized"
-                                icon="sap-icon://edit" press="onEditPressed"
-                                visible="{= !${editModel>/editmode}}"/>
-                        </OverflowToolbar>
-                    </customHeader>
-                    <content>
-                        <!--<core:Fragment id="app_change_fragment" 
-                        fragmentName="at.clouddna.training01.zhoui501.view.fragment.ChangeCustomer"
-                        type="XML"/>-->
-                    </content>
-                    <footer>
-                        <Bar>
-                            <contentRight>
-                                <Button id="app_save_button" text="{i18n>save}" type="Accept"
-                                    icon="sap-icon://save" press="onSavePressed"
-                                    visible="{editModel>/editmode}"/>
 
-                                <Button id="app_cancel_button" text="{i18n>cancel}" type="Reject"
-                                    icon="sap-icon://cancel" press="onCancelPressed"
-                                    visible="{editModel>/editmode}"/>
-                            </contentRight>
-                        </Bar>
-                    </footer>
-                </Page>
             </pages>
         </App>
     </Shell>
