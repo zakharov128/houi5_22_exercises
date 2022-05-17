@@ -1,15 +1,22 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageBox"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller) {
+    function (Controller, MessageBox) {
         "use strict";
 
         return Controller.extend("at.clouddna.training01.zhoui501.controller.App", {
             onInit: function () {
 
+            },
+
+            onSavePressed: function () {
+                let oModel = this.getView().getModel();
+                let oData = oModel.getData();
+                MessageBox.success(JSON.stringify(oData));
             },
 
             genderFormatter: function(sKey){

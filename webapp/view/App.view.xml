@@ -15,6 +15,13 @@
                         fragmentName="at.clouddna.training01.zhoui501.view.fragment.ChangeCustomer"
                         type="XML"/>
                     </content>
+                    <footer>
+                        <Bar>
+                            <contentRight>
+                                <Button id="app_save_button" text="{i18n>save}" type="Accept" icon="sap-icon://save" press="onSavePressed"></Button>
+                            </contentRight>
+                        </Bar>                        
+                    </footer>
                 </Page>
             </pages>
         </App>
